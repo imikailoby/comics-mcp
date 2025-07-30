@@ -1,0 +1,65 @@
+[
+  {
+    "name": "comicvine.lookup_character",
+    "description": "Lookup a comic book character to get basic info like real name, publisher, image, and summary. Use this for quick character searches.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The name of the comic character to look up (e.g. 'Spider-Man')."
+        }
+      },
+      "required": ["name"]
+    },
+    "examples": [
+      {
+        "input": {
+          "name": "Spider-Man"
+        },
+        "output": {
+          "name": "Spider-Man",
+          "real_name": "Peter Benjamin Parker",
+          "summary": "Peter Parker was bitten by a radioactive spider as a teenager, granting him spider-like powers...",
+          "publisher": "Marvel",
+          "image_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/12/124259/8126579-amazing_spider-man_vol_5_54_stormbreakers_variant_textless.jpg",
+          "source_url": "https://comicvine.gamespot.com/spider-man/4005-1443/"
+        }
+      }
+    ]
+  },
+  {
+    "name": "comicvine.get_character_details",
+    "description": "Get detailed character profile with full biography, aliases, origin, appearance history, and complete description. Use this when you need comprehensive character information.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The name of the comic character to get detailed profile for (e.g. 'Spider-Man')."
+        }
+      },
+      "required": ["name"]
+    },
+    "examples": [
+      {
+        "input": {
+          "name": "Spider-Man"
+        },
+        "output": {
+          "name": "Spider-Man",
+          "real_name": "Peter Benjamin Parker",
+          "summary": "Peter Parker was bitten by a radioactive spider as a teenager, granting him spider-like powers...",
+          "publisher": "Marvel",
+          "image_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/12/124259/8126579-amazing_spider-man_vol_5_54_stormbreakers_variant_textless.jpg",
+          "source_url": "https://comicvine.gamespot.com/spider-man/4005-1443/",
+          "aliases": ["Peter Parker", "Spidey", "Web-Head", "Wallcrawler"],
+          "origin": "Human",
+          "first_appearance": null,
+          "description": "Peter Benjamin Parker was born to C.I.A. agents Richard and Mary Parker...",
+          "site_detail_url": "https://comicvine.gamespot.com/spider-man/4005-1443/"
+        }
+      }
+    ]
+  }
+]
