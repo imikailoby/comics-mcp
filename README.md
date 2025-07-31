@@ -21,7 +21,7 @@ python3 -m comics_mcp.mcp_server
 
 | Plugin | Tools | Description |
 |--------|-------|-------------|
-| `comicvine` | `lookup_character` | Get comprehensive character information including aliases, origin, and appearance count. Optimized for fast response times. |
+| `comicvine` | `get_character` | Get comprehensive character information including aliases, origin, and appearance count. Optimized for fast response times. |
 
 ## 🔧 Setup
 

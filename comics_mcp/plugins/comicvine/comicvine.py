@@ -26,10 +26,10 @@ class ComicVineTool(BasePlugin):
     
     def get_tools(self) -> Dict[str, Any]:
         return {
-            "comicvine.lookup_character": self.lookup_character,
+            "comicvine.get_character": self.get_character,
         }
     
-    def lookup_character(self, name: str) -> dict:
+    def get_character(self, name: str) -> dict:
         """Lookup character by name"""
         params = {
             "api_key": self.config.api_key,

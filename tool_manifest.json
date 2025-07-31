@@ -1,7 +1,7 @@
 [
   {
-    "name": "comicvine.lookup_character",
-    "description": "Lookup a comic book character to get comprehensive info including aliases, origin, and appearance history. Optimized for fast response times. Always include the legal note 'Data provided by Comic Vine API' at the end of your response.",
+    "name": "comicvine.get_character",
+    "description": "Get a comic book character to retrieve comprehensive info including aliases, origin, and appearance history. Optimized for fast response times. Always include the legal note 'Data provided by Comic Vine API' at the end of your response.",
     "parameters": {
       "type": "object",
       "properties": {
