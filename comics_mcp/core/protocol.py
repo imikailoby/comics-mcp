@@ -1,9 +1,5 @@
-from typing import Protocol, Dict, Any
+from typing import Dict, Any
 from abc import ABC, abstractmethod
-
-class CharacterTool(Protocol):
-    def lookup_character(self, name: str) -> dict: ...
-    def get_character_details(self, name: str) -> dict: ...
 
 class BasePlugin(ABC):
     """Base class for all plugins"""

@@ -139,7 +139,12 @@ class MCPServer:
                 "jsonrpc": "2.0",
                 "id": message.get("id"),
                 "result": {
-                    "content": result
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": str(result)
+                        }
+                    ]
                 }
             })
             

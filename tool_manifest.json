@@ -1,7 +1,7 @@
 [
   {
     "name": "comicvine.lookup_character",
-    "description": "Lookup a comic book character to get basic info like real name, publisher, image, and summary. Use this for quick character searches.",
+    "description": "Lookup a comic book character to get comprehensive info including aliases, origin, and appearance history. Optimized for fast response times. Always include the legal note 'Data provided by Comic Vine API' at the end of your response.",
     "parameters": {
       "type": "object",
       "properties": {
@@ -20,46 +20,19 @@
         "output": {
           "name": "Spider-Man",
           "real_name": "Peter Benjamin Parker",
-          "summary": "Peter Parker was bitten by a radioactive spider as a teenager, granting him spider-like powers...",
-          "publisher": "Marvel",
-          "image_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/12/124259/8126579-amazing_spider-man_vol_5_54_stormbreakers_variant_textless.jpg",
-          "source_url": "https://comicvine.gamespot.com/spider-man/4005-1443/"
-        }
-      }
-    ]
-  },
-  {
-    "name": "comicvine.get_character_details",
-    "description": "Get detailed character profile with full biography, aliases, origin, appearance history, and complete description. Use this when you need comprehensive character information.",
-    "parameters": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string",
-          "description": "The name of the comic character to get detailed profile for (e.g. 'Spider-Man')."
-        }
-      },
-      "required": ["name"]
-    },
-    "examples": [
-      {
-        "input": {
-          "name": "Spider-Man"
-        },
-        "output": {
-          "name": "Spider-Man",
-          "real_name": "Peter Benjamin Parker",
-          "summary": "Peter Parker was bitten by a radioactive spider as a teenager, granting him spider-like powers...",
+          "description": "Peter Parker was bitten by a radioactive spider as a teenager, granting him spider-like powers. After the death of his Uncle Ben, Peter learned that \"with great power, comes great responsibility.\" Swearing to always protect the innocent from harm, Peter Parker became Spider-Man.",
           "publisher": "Marvel",
           "image_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/12/124259/8126579-amazing_spider-man_vol_5_54_stormbreakers_variant_textless.jpg",
           "source_url": "https://comicvine.gamespot.com/spider-man/4005-1443/",
-          "aliases": ["Peter Parker", "Spidey", "Web-Head", "Wallcrawler"],
+          "legal_note": "Data provided by Comic Vine API",
+          "aliases": ["Peter Parker", "Captain Universe", "Dusk", "Hornet", "Prodigy", "Ricochet", "Bombastic Bag-Man", "Poison", "Pestilence", "Spidey", "Wallcrawler", "Webslinger", "Web-Head", "Your Friendly Neighborhood Spider-Man", "Spider-Kid", "The Human Spider", "Peter Benjamin Parker"],
           "origin": "Human",
-          "first_appearance": null,
-          "description": "Peter Benjamin Parker was born to C.I.A. agents Richard and Mary Parker...",
-          "site_detail_url": "https://comicvine.gamespot.com/spider-man/4005-1443/"
-        }
+          "birth": "Oct 14, 1962",
+          "count_of_issue_appearances": 17748
+        },
+        "formatted_response": "Here's what I found about Spider-Man:\n\nSpider-Man (Peter Benjamin Parker)\nReal Name: Peter Benjamin Parker\nPublisher: Marvel\nOrigin: Human\nBirth: October 14, 1962\nAppearances: 17,748 comic issues\nDescription: Peter Parker was bitten by a radioactive spider as a teenager, granting him spider-like powers. After the death of his Uncle Ben, Peter learned that \"with great power, comes great responsibility.\" Swearing to always protect the innocent from harm, Peter Parker became Spider-Man.\nAliases: Peter Parker, Captain Universe, Dusk, Hornet, Prodigy, Ricochet, Bombastic Bag-Man, Poison, Pestilence, Spidey, Wallcrawler, Webslinger, Web-Head, Your Friendly Neighborhood Spider-Man, Spider-Kid, The Human Spider\n\nData provided by Comic Vine API"
       }
     ]
   }
 ]
+
